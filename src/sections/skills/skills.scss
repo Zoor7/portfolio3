@@ -13,3 +13,15 @@
     display: grid;
     justify-content: space-between;
 }
+
+@media (max-width: 900px) {
+    .skills{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills-desc{
+
+    }
+
+  }

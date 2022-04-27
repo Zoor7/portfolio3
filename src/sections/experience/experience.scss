@@ -41,3 +41,17 @@
 .studies{
     margin-top: 5rem;
 }
+
+@media (max-width: 600px) {
+    .experience{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        gap: 2rem;
+    }
+    .studies{
+        margin-top: 2rem;
+    }
+    .experience-desc{}
+ 
+  }

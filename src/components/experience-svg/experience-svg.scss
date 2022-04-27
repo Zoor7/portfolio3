@@ -84,3 +84,15 @@
 
     }
 }
+@media (max-width: 600px) {
+    .experience-svg{
+        display: none;
+    }
+
+  }
+  @media (max-width: 900px) {
+    .experience-svg{
+        right: 80px;
+    }
+
+  }

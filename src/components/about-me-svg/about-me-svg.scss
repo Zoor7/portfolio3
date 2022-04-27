@@ -5,6 +5,7 @@
     background-color: var(--background-section);
     border-radius: 10px;
     height: 400px;
+    z-index: -1;
     
     svg{
         position: absolute;
@@ -88,3 +89,38 @@
     
     }
 }
+
+
+@media (max-width: 850px) {
+    .aboutMe-svg{
+        position: absolute;
+        display: grid;
+        grid-template-columns: minmax(200px,400px);
+        height: 350px;
+        top: 0;
+        right: 0;
+        background-color: var(--background-section);
+
+        
+        svg{
+            width: 100%;
+        }
+    }
+
+  }
+  @media (max-width: 990px) {
+    .aboutMe-svg{
+
+    }
+
+  }
+  @media (max-width: 600px) {
+    .aboutMe-svg{
+        display: none;
+
+        svg{
+            width: 100%;
+        }
+    }
+
+  }
