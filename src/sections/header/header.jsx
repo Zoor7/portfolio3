@@ -11,16 +11,18 @@ const Header = ({ theme, switchTheme }) => {
       <div className="navbar">
         <ul>
           <li>
-            <a href="/#Skills">Skills</a>
+            <a href="https://zoor7.github.io/portfolio3/#Skills">Skills</a>
           </li>
           <li>
-            <a href="/#Experience">Experience</a>
+            <a href="https://zoor7.github.io/portfolio3/#Experience">
+              Experience
+            </a>
           </li>
           <li>
-            <a href="/#Projects">Projects</a>
+            <a href="https://zoor7.github.io/portfolio3/#Projects">Projects</a>
           </li>
           <li>
-            <a href="/#Contact">Contact</a>
+            <a href="https://zoor7.github.io/portfolio3/#Contact">Contact</a>
           </li>
         </ul>
       </div>
