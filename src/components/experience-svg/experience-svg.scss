@@ -1,0 +1,86 @@
+.experience-svg{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 300px;
+    z-index: -1;
+    svg{
+
+    }
+
+}
+.right-paper,.left-papers{
+    opacity: 0;
+}
+.papers-in{
+    animation: papersin ease 1.5s;
+    animation-fill-mode: forwards;
+}
+.papers-out{
+    animation: papersout ease 1.5s;
+    animation-fill-mode: forwards;
+}
+.plant-in{
+    animation: plantin ease 2.3s;
+    animation-fill-mode: forwards;
+    transform-box: fill-box;
+    transform-origin: bottom;
+}
+.plant-out{
+    animation: plantout ease 2.3s;
+    animation-fill-mode: forwards;
+    transform-box: fill-box;
+    transform-origin: bottom;
+
+}
+.plant{
+    opacity: 0;
+}
+
+
+@keyframes papersin{
+    0%{
+        opacity: 0;
+        transform: translateY(-70px);
+        
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+        
+    }
+}
+@keyframes papersout{
+    0%{
+        opacity: 1;
+        transform: translateY(0px);
+        
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-70px);
+
+    }
+}
+@keyframes plantin{
+    0%{
+        opacity: 1;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+
+    }
+}
+@keyframes plantout{
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(0);
+
+    }
+}

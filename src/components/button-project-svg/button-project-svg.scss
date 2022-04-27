@@ -1,0 +1,21 @@
+.button-project-svg{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    svg{
+        height: auto;
+    }
+}
+
+.button-project-svg:hover{
+    animation: circles 2s infinite linear;
+    
+}
+@keyframes circles {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

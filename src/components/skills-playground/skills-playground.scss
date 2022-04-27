@@ -1,0 +1,65 @@
+.avatar{
+    display: grid;
+    gap: 1rem 0;
+
+}
+.avatar-filter{
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+	-ms-overflow-style: none;
+	scrollbar-width: none; 
+}
+.avatar-filter::-webkit-scrollbar{
+    display: none;
+}
+.avatar-filter p{
+    font-weight: 200;
+    margin:  0.5rem;
+    cursor: pointer;
+}
+.avatar-filter .active{
+    border-bottom: 1px solid var(--text-primary);
+    font-weight: 400;
+}
+.avatar-filter span{
+    position: sticky;
+    font-weight: 900;
+    background-color: var(--background-secondary);
+    opacity: 0.1;
+    font-size: 1.2rem;
+    color: black;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: opacity ease-in 0.5s;
+}
+.avatar-filter span:hover{
+    opacity: 0.7;
+    
+}
+.avatar-filter span:nth-of-type(1){
+    left: 0;
+}
+.avatar-filter span:nth-of-type(2){
+    right: 0;
+}
+.avatar-images{
+    display: grid;
+    border-radius: 5px;
+    grid-template-columns: repeat(4,40px);
+    justify-self: center;
+    justify-content: center;
+    align-content: center;
+    height: 200px;
+    width: 200px;
+    background-color: #ffff;
+    
+}
+.avatar-images img{
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+}

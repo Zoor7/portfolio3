@@ -1,0 +1,26 @@
+.aboutMe{
+    display: grid;
+    grid-template-columns: minmax(100px,650px) minmax(400px,650px);
+    align-content: center;
+    gap: 2rem;
+}
+
+.about{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.about-desc{
+    display: flex;
+    gap: 0.7rem;
+
+    hr {
+        margin-top: 7px;
+        height: 1px;
+        width: 50px;
+        border: 2px solid var(--text-primary);
+        border-radius: 10px;
+   
+    }
+}

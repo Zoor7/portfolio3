@@ -1,0 +1,15 @@
+.skills{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    &::before{
+        background-color: var(--background-section);
+
+    }
+}
+.skills-desc{
+    position: relative;
+    display: grid;
+    justify-content: space-between;
+}

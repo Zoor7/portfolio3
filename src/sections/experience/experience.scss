@@ -1,0 +1,40 @@
+.experience{
+    display: flex;
+    justify-content: space-between;
+    h2{
+        width: min-content;
+    }
+
+    &::before{
+
+    }
+}
+.experience-desc{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.experience-jobs,.studies{
+    font-weight: 500;
+    li{
+        border-top: 1px solid var(--text-primary);
+        padding: 1rem;
+        display: flex;
+        gap: 1rem;
+        div{
+            display: grid;
+            gap: 0.5rem;
+            p:nth-of-type(2){
+                font-weight: 200;
+            }
+            a{
+                text-decoration: underline;
+            }
+
+        }
+    }
+}
+.studies{
+    margin-top: 5rem;
+}

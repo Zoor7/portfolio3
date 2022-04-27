@@ -1,0 +1,90 @@
+.aboutMe-svg{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-section);
+    border-radius: 10px;
+    height: 400px;
+    
+    svg{
+        position: absolute;
+        top: 0;
+        width: 90%;
+        height: auto;
+    }
+}
+.top-cloud{
+    opacity: 0;
+
+}
+.bottom-cloud{
+    opacity: 0;
+}
+.top-cloud-animation{
+    animation: topcloudsin ease 1.5s;
+    animation-fill-mode: forwards;
+}
+.bottom-cloud-animation{
+    animation: bottomcloudsin ease 1.5s;
+    animation-fill-mode: forwards;
+}
+.top-cloud-animation-out{
+    animation: topcloudsout ease 1.5s;
+    animation-fill-mode: forwards;
+    
+}
+.bottom-cloud-animation-out{
+    animation: bottomcloudsout ease 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bottomcloudsin{
+    0%{
+        display: flex;
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    
+    }
+}
+
+@keyframes topcloudsin{
+    0%{
+        display: flex;
+        transform: translateX(70px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    
+    }
+}
+@keyframes bottomcloudsout{
+    0%{
+        display: flex;
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(-30px);
+    
+    }
+}
+
+@keyframes topcloudsout{
+    0%{
+        display: flex;
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(70px);
+    
+    }
+}

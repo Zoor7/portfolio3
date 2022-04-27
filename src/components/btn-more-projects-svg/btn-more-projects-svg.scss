@@ -1,0 +1,38 @@
+.btnMoreProjectsSvg{
+    padding: 2rem;
+    position: absolute;
+    cursor: pointer;
+    bottom: 0;
+    right: 0;
+}
+
+.btnMoreProjectsSvg-text-animation{
+    animation: circles 6s infinite linear;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.arrow-animation{
+    animation: breathe 1s infinite linear;
+    transform-box: fill-box;
+    transform-origin: center;
+
+}
+@keyframes circles {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes breathe{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
