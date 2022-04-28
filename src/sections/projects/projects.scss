@@ -1,8 +1,6 @@
 .projects{
-    display: flex;
-    height: 100%;
+    display: grid;
     color: black;
-    gap: 1rem;
     &::before{
         background-color: var(--background-section);
 
@@ -11,13 +9,20 @@
 
 .projects-desc{
     position: relative;
+}
+.projects-items{
+    position: absolute;
+    padding: 80px;
+    bottom: 0;
+    top: 0;
     display: grid;
-    justify-content: space-between;
+    width: 100%;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    gap: 1rem;
 }
 .project{
     display: grid;
     gap: 0.5rem;
-    grid-template-columns: minmax(100px,400px);
     border-top: 1px solid black;
     padding: 0.5rem;
     
@@ -48,3 +53,18 @@
     align-self: flex-start;
 
 }
+@media (max-width: 1100px) {
+    .projects{
+        min-height: auto !important;
+
+    }
+    .projects-items{
+        position: relative;
+        padding: 40px 0;
+
+    }
+    .project{
+        justify-content: flex-start;
+    }
+
+  }

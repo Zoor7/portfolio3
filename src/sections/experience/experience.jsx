@@ -55,9 +55,9 @@ const Experience = () => {
         <h3>Experience</h3>
         <ul>
           <li>
-            <p>2019-2019</p>
+            <p>2021-2021</p>
             <div>
-              <p>Frontend</p>
+              <p>Frontend (Internship) </p>
               <p>Grupo Hostienda</p>
             </div>
           </li>

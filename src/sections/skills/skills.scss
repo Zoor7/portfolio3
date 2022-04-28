@@ -17,10 +17,18 @@
 @media (max-width: 900px) {
     .skills{
         display: grid;
-        align-items: center;
-        justify-content: center;
+        grid-template-columns: 1fr;
+        min-height: auto !important;
     }
     .skills-desc{
+        grid-template-columns: 1fr;
+        justify-content: flex-start;
+        gap: 2rem;
+
+    }
+    .skill-play{
+        display: flex;
+        justify-content: center;
 
     }
 

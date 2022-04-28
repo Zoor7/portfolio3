@@ -61,7 +61,7 @@ svg{
 }
 .section{
   position: relative;
-  min-height: 600px;
+  min-height: 650px;
   z-index: 1;
 }
 .section::before{

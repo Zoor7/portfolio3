@@ -10,9 +10,8 @@ const AboutMe = () => {
         <div className="about-desc">
           <hr />
           <p>
-            Hi! I'm Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Eum perferendis doloribus numquam quaerat incidunt in facere placeat
-            qui, delectus voluptate.{" "}
+            Hi! I'm Héctor. I like to spend time creating things on the pc, I
+            also like to learn and teach to improve as a developer.
           </p>
         </div>
       </div>

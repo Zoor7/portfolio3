@@ -36,7 +36,9 @@ const Skills = () => {
       <div className="skills-desc">
         <p className="section-title">Skills</p>
         <h2>Skills</h2>
-        <SkillsPlayground handleIcon={handleIcon} />
+        <div className="skill-play">
+          <SkillsPlayground handleIcon={handleIcon} />
+        </div>
       </div>
       <SkillsSvg icon={icon} />
     </div>
