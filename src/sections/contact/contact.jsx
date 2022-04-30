@@ -1,20 +1,7 @@
-import { useEffect, useState } from "react";
 import mailLogo from "../../assets/svgs/gmail-logo.svg";
 import "./contact.scss";
+
 const Contact = () => {
-  const [mobile, setMobile] = useState(false);
-
-  useEffect(() => {
-    if (
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent
-      )
-    ) {
-      setMobile(true);
-      console.log("hola");
-    }
-  }, []);
-
   return (
     <div id="Contact" className="contact section container">
       <div className="contact-desc">

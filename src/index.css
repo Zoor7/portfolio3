@@ -1,14 +1,16 @@
 :root {
   --background: #FFFFFF;
-  --background-section: #FCDA69;
+  --background-secondary:#202020 ;
   --text-primary: #18171C;
   --text-secondary: #FFFFFF;
+  --det-color:#8873ef;
 }
 [data-theme="dark"] {
-  --background: #282828;
-  --background-section:#FCDA69;
+  --background: #202020;
+  --background-secondary: #FFFFFF;
   --text-primary: #FFFFFF;
   --text-secondary: #18171C;
+  --det-color:#8873ef;
 }
 
 *{
@@ -35,7 +37,6 @@ h1{
   letter-spacing: 0;
 }
 h2{
-  z-index: -1;
   font-size: 3rem;
   line-height: 150%;
   font-weight: 600;
@@ -58,59 +59,33 @@ ul{
 }
 svg{
   width: 100%;
+  height: 100%;
 }
 .section{
   position: relative;
-  min-height: 650px;
-  z-index: 1;
+  border-top: 1px solid var(--text-primary);
+  padding:  6rem 2rem !important;
 }
-.section::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -50vw;
-  bottom: 0;
-  right: -50vw;
-  z-index: -1;
-}
+
 .section-title{
   position: absolute;
   top: -20px;
   left: -20px;
-  color: #8873ef;
+  color: var(--det-color);
   font-weight: 700;
   transform: rotate(-25deg);
 }
 .container{
-  padding:80px;
+  padding:4rem 2rem;
 
 }
 
 
 @media (max-width: 1000px) {
-  .section{
 
-  }
-  .container{
-    padding: 80px 20px;
-  }
 }
 @media (max-width: 900px) {
-  .section{
 
-  }
-  .container{
-    padding: 80px 20px;
-  }
-  h1{
-    font-size: 3rem;
-  }
-  h2{
-    font-size: 2rem;
-  }
-  h3{
-    font-size: 1.5rem;
-  }
 
 }
 @media (max-width: 600px) {

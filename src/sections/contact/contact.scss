@@ -1,11 +1,9 @@
 .contact{
     display: grid;
-    grid-template-columns: minmax(200px,300px) 1fr;
+    grid-template-columns: 1fr;
+    gap: 2rem;
     justify-content: space-between;
-    min-height: auto !important;
-    &::before{
 
-    }
 }
 .contact-desc{
     position: relative;

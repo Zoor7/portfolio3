@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useWindowSize } from "../../hooks/useWindowSize";
 import "./skills-playground.scss";
 
 const SkillsPlayground = ({ handleIcon }) => {
   const [role, setRole] = useState("Frontend");
+  const { width } = useWindowSize();
 
   const handleArrow = (arrow) => {
     const scrollDiv = document.getElementsByClassName("avatar-filter")[0];
@@ -24,7 +26,8 @@ const SkillsPlayground = ({ handleIcon }) => {
   return (
     <div className="avatar">
       <div className="avatar-filter">
-        <span onClick={() => handleArrow("<")}>{"<"}</span>
+        {width < 600 && <span onClick={() => handleArrow("<")}>{"<"}</span>}
+
         <p
           className={isActive("Frontend")}
           onClick={(e) => handleRole(e.target)}
@@ -46,7 +49,7 @@ const SkillsPlayground = ({ handleIcon }) => {
         >
           Learning
         </p>
-        <span onClick={() => handleArrow(">")}>{">"}</span>
+        {width < 600 && <span onClick={() => handleArrow(">")}>{">"}</span>}
       </div>
       {role === "Frontend" && (
         <div className="avatar-images">

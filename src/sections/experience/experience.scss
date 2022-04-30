@@ -1,21 +1,17 @@
 .experience{
     display: flex;
     justify-content: space-between;
-    h2{
-        width: min-content;
-    }
-
-    &::before{
-
-    }
+    
 }
 .experience-desc{
     position: relative;
     display: flex;
     flex-direction: column;
     align-content: center;
+    z-index: 2;
 }
 .experience-jobs,.studies{
+    z-index: 2;
     font-weight: 500;
     li{
         border-top: 1px solid var(--text-primary);

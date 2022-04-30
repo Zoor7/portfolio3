@@ -3,7 +3,6 @@
   height: 100%;
   grid-template-columns: minmax(100px,1464px);
   justify-content: center;
-  align-content: flex-start;
   overflow-x: hidden;
   scroll-behavior: smooth;
   background-color: var(--background);

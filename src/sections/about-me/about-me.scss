@@ -2,11 +2,12 @@
     position: relative;
     display: grid;
     grid-template-columns: minmax(100px,650px) minmax(400px,650px);
-    align-content: center;
-    gap: 2rem;
+    align-items: center;
+    border-top: none !important;
 }
 
 .about{
+    z-index: 2;
     position: relative;
     display: flex;
     flex-direction: column;

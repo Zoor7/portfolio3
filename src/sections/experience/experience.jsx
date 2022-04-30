@@ -8,14 +8,14 @@ const Experience = () => {
 
     papers[0].setAttribute("class", "left-papers paper papers-in");
     papers[1].setAttribute("class", "right-paper paper papers-in");
-    plant[1].setAttribute("class", "plant plant-in");
+    plant[0].setAttribute("class", "plant plant-in");
   };
   const onHoverOut = () => {
     const papers = document.getElementsByClassName("paper");
     const plant = document.getElementsByClassName("plant");
     papers[0].setAttribute("class", "left-papers paper papers-out");
     papers[1].setAttribute("class", "right-paper paper papers-out");
-    plant[1].setAttribute("class", "plant plant-out");
+    plant[0].setAttribute("class", "plant plant-out");
   };
   return (
     <div
