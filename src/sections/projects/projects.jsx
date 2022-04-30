@@ -1,7 +1,7 @@
 import BtnMoreProjectsSvg from "../../components/btn-more-projects-svg/btn-more-projects-svg";
 import ButtonProjectSvg from "../../components/button-project-svg/button-project-svg";
-import workinprogress from "../../assets/workinprogress.png";
 import "./projects.scss";
+import Wip from "../../components/wip/wip";
 
 const Projects = () => {
   return (
@@ -26,7 +26,7 @@ const Projects = () => {
             <ButtonProjectSvg link={""} />
           </div>
           <div className="project-img">
-            <img src={workinprogress} alt="project-img" />
+            <Wip />
           </div>
         </div>
         <div className="project3 project">

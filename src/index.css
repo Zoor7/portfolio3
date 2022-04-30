@@ -4,6 +4,7 @@
   --text-primary: #18171C;
   --text-secondary: #FFFFFF;
   --det-color:#8873ef;
+  /* --det-color:#84df9a; */
 }
 [data-theme="dark"] {
   --background: #202020;

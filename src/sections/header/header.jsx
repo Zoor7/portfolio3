@@ -21,7 +21,7 @@ const Header = ({ theme, switchTheme }) => {
 
   if (width < 600) {
     return (
-      <div className={`container `}>
+      <div className={`container `} id="top">
         <div className="mobile-header">
           <div className="logo">
             <img src={zoro} alt="zoro " />
@@ -34,13 +34,13 @@ const Header = ({ theme, switchTheme }) => {
           >
             <svg viewBox="0 0 100 80" width="40" height="40">
               <g className={`rect rect1 ${closed ? "" : "closed-burguer-1"}`}>
-                <rect width="100" height="20"></rect>
+                <rect width="100" height="20" fill="#84df9a"></rect>
               </g>
               <g className={`rect rect2 ${closed ? "" : "closed-burguer-2"}`}>
-                <rect y="30" width="100" height="20"></rect>
+                <rect y="30" width="100" height="20" fill="#84df9a"></rect>
               </g>
               <g className={`rect rect3 ${closed ? "" : "closed-burguer-3"}`}>
-                <rect y="60" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20" fill="#84df9a"></rect>
               </g>
             </svg>
           </div>
@@ -48,6 +48,9 @@ const Header = ({ theme, switchTheme }) => {
         <div className={`header ${closed ? "closed" : "open"}`}>
           <div className="navbar">
             <ul>
+              <li>
+                <a href="#top">About me</a>
+              </li>
               <li>
                 <a href="#Skills">Skills</a>
               </li>
@@ -68,7 +71,7 @@ const Header = ({ theme, switchTheme }) => {
     );
   }
   return (
-    <div className={`header container`}>
+    <div id="top" className={`header container`}>
       <div className="logo">
         <img src={zoro} alt="zoro " />
       </div>
